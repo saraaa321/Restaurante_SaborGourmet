@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <title>SaborGourmet_EspaçoReservas</title>
+</head>
+<body>
+    <header>
+        <h1>Reservas</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html">Cardápio</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+               
+<section class="container">
+    <header>Registro de Reserva</header>
+    <form class="form" action="#">
+        <div class="input-box">
+            <label>Nome completo</label>
+            <input required="" placeholder="Insira seu nome completo" type="text">
+        </div>
+        <div class="column">
+            <div class="input-box">
+              <label>Número de Telefone</label>
+              <input required="" placeholder="Insira seu número" type="telephone">
+            </div>
+            <div class="input-box">
+              <label>Para dia:</label>
+              <input required="" placeholder="Insira sua data de reserva" type="date">
+            </div>
+        </div>
+        <div class="gender-box">
+          <label>Quantidade de pessoas</label>
+          <div class="gender-option">
+            <div class="gender">
+              <input checked="" name="gender" id="check-male" type="radio">
+              <label for="check-male">1</label>
+            </div>
+            <div class="gender">
+              <input name="gender" id="check-female" type="radio">
+              <label for="check-female">2 até 4</label>
+            </div>
+            <div class="gender">
+              <input name="gender" id="check-other" type="radio">
+              <label for="check-other">4 ou mais</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Endereço</label>
+          <input required="" placeholder="Insira seu endereço" type="text">
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden="">Local</option>
+                <option>Vila Romã, 172</option>
+                <option>Avenida Italian, 87</option>
+                <option>Rua Popoa, 23</option>
+                <option>Avenida 27, 234</option>
+              </select>
+            </div>
+          <input required="" placeholder="Preferências" type="text">
+          </div>
+        </div>
+        <button>Enviar</button>
+    </form>
+  </section>
+    </main>
+        </main>
+        <form action="#" method="post" id="reservaForm">
+            <label for="nome">
+                <footer>
+                    <p>&copy; 2025 Sabor Gourmet. Todos os direitos reservados.</p>
+                </footer>

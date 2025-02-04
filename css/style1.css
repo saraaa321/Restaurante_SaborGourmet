@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(25, 29, 43, 0.8);
+  color: white;
+  padding: 20px;
+}
+
+header img {
+  width: 130px;
+  height: 75px;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.logo,
+.titulo,
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+}
+
+.titulo {
+  flex-direction: column;
+}
+
+.logo {
+  justify-content: flex-start;
+}
+
+.btn {
+  font-size: 11px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #30205f;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #402d79;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #000000; 
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li img {
+    width: 50px; 
+    height: auto;
+    margin-left: 10px;
+}  */
